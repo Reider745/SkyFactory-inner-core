@@ -1,2 +1,8 @@
 <title>:Обновление Pre release 1.0
 <text>:- Добавлен мод Minecraft online
+<text>:- Добавлен мод Jei mobile
+<text>:- Добавлен мод Ftb Quests
+<text>:- Переработана система квестов
+<text>:- Обновлён Recipe Viewer
+<text>:- Обновлены некоторые текстуры Factory craft
+<text>:- Фикс багов

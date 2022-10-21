@@ -1,7 +1,6 @@
 {
     "init": "init.js",
     "patcheds": {
-        "test-message": "patcheds/test-message.js"
     },
     "information": {
         "version": "pre-release 1.0",
