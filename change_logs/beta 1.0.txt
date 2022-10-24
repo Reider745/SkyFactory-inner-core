@@ -1,0 +1,5 @@
+<title>:Обновление Beta 1.0
+<text>:- Оптимизация отслеживания крафтов и ломания блоков 
+<text>:- Добавлен мод Tool Tweaks 
+<text>:- Добавлен мод Item information 
+<text>:- Добавлен мод Avaritia
