@@ -2,6 +2,7 @@
 <text>:- Добавлен мод Minecraft online
 <text>:- Добавлен мод Jei mobile
 <text>:- Добавлен мод Ftb Quests
+<text>:- Удалён мод Backups
 <text>:- Переработана система квестов
 <text>:- Обновлён Recipe Viewer
 <text>:- Обновлены некоторые текстуры Factory craft
