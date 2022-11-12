@@ -1,0 +1,5 @@
+self.GetTimeAPI = {
+    getDay(){
+        
+    }
+};

@@ -1,0 +1,8 @@
+<title>:Обновление Pre release 1.1
+<text>:- Обновлён мод ClassicUI(фикс 3 багов)
+<text>:- Обновлён мод Jei mobile(фикс 1 бага)
+<text>:- Обновлён мод FtbQuests
+<text>:- Обновлён мод Inventory HUD Plus
+<text>:- Фиксы возможных ошибок Minecraft online
+<text>:- фикс взрыва паровой турбины
+<text>:- фикс удаления блока при нажатии на блок Storage Drawers
