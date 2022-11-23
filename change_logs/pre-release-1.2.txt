@@ -1,0 +1,4 @@
+<title>:Обновление Pre release 1.2
+<text>:- Обновлён мод ClassicUI
+<text>:- Обновлён мод FtbQuests
+<text>:- Фикс бага дюпа мешочков с лутом

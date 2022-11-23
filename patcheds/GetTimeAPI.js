@@ -1,5 +1,3 @@
-self.GetTimeAPI = {
-    getDay(){
-        
-    }
-};
+self.getDate = function(){
+    
+}
