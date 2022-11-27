@@ -1,0 +1,5 @@
+<title>:Обновление Pre release 1.4
+<text>:- Фикс крафта филосовского камня
+<text>:- Фикс ошибки при крафте в терминале
+<text>:- Фикс ошибки при открытии контроллера RefinedStorage 
+<text>:- Фикс ошибки ItemInformation при отключении CoreUtility

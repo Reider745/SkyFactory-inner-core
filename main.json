@@ -3,7 +3,7 @@
     "patcheds": {
     },
     "information": {
-        "version": "pre-release 1.3",
+        "version": "pre-release 1.4",
         "change_logs": {
             "alpha 4.2": "change_logs/alpha-4.2.txt",
             "beta 1.0": "change_logs/beta-1.0.txt",
@@ -11,7 +11,8 @@
             "pre-release 1.0": "change_logs/pre-release-1.0.txt",
             "pre-release 1.1": "change_logs/pre-release-1.1.txt",
             "pre-release 1.2": "change_logs/pre-release-1.2.txt",
-            "pre-release 1.3": "change_logs/pre-release-1.3.txt"
+            "pre-release 1.3": "change_logs/pre-release-1.3.txt",
+            "pre-release 1.4": "change_logs/pre-release-1.4.txt"
         }
     }
 }
