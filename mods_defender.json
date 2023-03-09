@@ -147,7 +147,7 @@
 		"name": "Recipe Viewer",
 		"level_defender": 2,
 		"message": 5,
-		"version": ["6.0"]
+		"versions": ["6.0"]
 	},
 	{
 		"name": "RedPower",
