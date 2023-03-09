@@ -1,6 +1,7 @@
 {
     "init": "init.js",
     "patcheds": {
+        "loader_defender": "patcheds/loader_defender.js"
     },
     "information": {
         "version": "pre-release 1.4",
