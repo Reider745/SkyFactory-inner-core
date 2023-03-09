@@ -1,0 +1,202 @@
+[
+	{
+		"name": "AdvancedSolarPanels",
+		"level_defender": 1,
+		"message": 1
+	},
+	{
+		"name": "air leave",
+		"level_defender": 0
+	},
+	{
+		"name": "AppleSkinBE",
+		"level_defender": 0
+	},
+	{
+		"name": "AutoPlant-multiplayer",
+		"level_defender": 0
+	},
+	{
+		"name": "AvaritiaBE",
+		"level_defender": 3,
+		"message": 2
+	},
+	{
+		"name": "Better-Foliage",
+		"level_defender": 0
+	},
+	{
+		"name": "BonsaiPots",
+		"level_defender": 0
+	},
+	{
+		"name": "BuildCraft",
+		"level_defender": 0
+	},
+	{
+		"name": "ClassicUI",
+		"level_defender": 0
+	},
+	{
+		"name": "Clumps",
+		"level_defender": 0
+	},
+	{
+		"name": "CoreEngine",
+		"level_defender": 4,
+		"message": 3,
+		"versions": [
+			"3.0.0-Alpha"
+		]
+	},
+	{
+		"name": "CustomRecipes",
+		"level_defender": 4,
+		"message": 3,
+		"versions": [
+			"release 1.0"
+		]
+	},
+	{
+		"name": "Ex Nihilo Origin",
+		"level_defender": 4,
+		"message": 2,
+		"versions": [
+			"2.0"
+		]
+	},
+	{
+		"name": "Extra-Disks",
+		"level_defender": 1,
+		"message": 4
+	},
+	{
+		"name": "FactoryCraft",
+		"level_defender": 1,
+		"message": 4
+	},
+	{
+		"name": "FTBQuests",
+		"level_defender": 0
+	},
+	{
+		"name": "GameTimeHUD",
+		"level_defender": 0
+	},
+	{
+		"name": "GraviSuite",
+		"level_defender": 0
+	},
+	{
+		"name": "IndustrialCraft2",
+		"level_defender": 3,
+		"message": 2
+	},
+	{
+		"name": "Inventory HUD Plus",
+		"level_defender": 0
+	},
+	{
+		"name": "IronChests",
+		"level_defender": 1,
+		"message": 4
+	},
+	{
+		"name": "ItemInformation",
+		"level_defender": 0
+	},
+	{
+		"name": "Jei-mobile",
+		"level_defender": 0
+	},
+	{
+		"name": "KernelExtension",
+		"level_defender": 4,
+		"message": 3,
+		"versions": [
+			"3.0"
+		]
+	},
+	{
+		"name": "Modpack-online",
+		"level_defender": 0
+	},
+	{
+		"name": "MP-ArmorStatus",
+		"level_defender": 0
+	},
+	{
+		"name": "NetherEX",
+		"level_defender": 0
+	},
+	{
+		"name": "Nuclear Craft",
+		"level_defender": 0
+	},
+	{
+		"name": "ProjectE",
+		"level_defender": 1,
+		"message": 4
+	},
+	{
+		"name": "RealCraft",
+		"level_defender": 3,
+		"message": 2
+	},
+	{
+		"name": "Recipe Viewer",
+		"level_defender": 2,
+		"message": 5,
+		"version": ["6.0"]
+	},
+	{
+		"name": "RedPower",
+		"level_defender": 1,
+		"message": 2
+	},
+	{
+		"name": "Refined Storage",
+		"level_defender": 1,
+		"message": 4
+	},
+	{
+		"name": "Sky-Block-core",
+		"level_defender": 3,
+		"message": 3
+	},
+	{
+		"name": "Storage Drawers",
+		"level_defender": 1,
+		"message": 4
+	},
+	{
+		"name": "ThirstMod",
+		"level_defender": 0
+	},
+	{
+		"name": "TimeWand",
+		"level_defender": 0
+	},
+	{
+		"name": "ToolTweaks",
+		"level_defender": 0
+	},
+	{
+		"name": "Tree-Growing",
+		"level_defender": 1,
+		"message": 4
+	},
+	{
+		"name": "Utils+",
+		"level_defender": 1,
+		"message": 4
+	},
+	{
+		"name": "wood-model-update",
+		"level_defender": 0
+	},
+	{
+		"name": "World-utility",
+		"level_defender": 0
+	}
+]
