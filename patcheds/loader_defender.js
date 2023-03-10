@@ -10,7 +10,7 @@ const NAME = "Loader Defender 1.0";
 */
 
 
-let ModsDefender = self.getFile("mods_defender.json");
+let ModsDefender = JSON.parse(self.getFile("mods_defender.json"));
 const DefaultMessage = [
 	"",
 	"\n<text>:Отсутсвие данного мода может привести к не предсказуемым последствиям",
