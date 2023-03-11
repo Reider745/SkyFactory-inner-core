@@ -59,6 +59,7 @@ void function(){
 			this.levels[level] = func;
 		},
 		getJson(path){
+			alert(path)
 			if(!FileTools.isExists(path)) return null;
 			return FileTools.ReadJSON(path)
 		},
@@ -72,10 +73,11 @@ void function(){
 				object.level_defender = object.level_defender || 0;
 				object.description = object.description || DefaultMessage[object.message || 0];
 				
+				let name = obj.name;
 				let result = this.levels[object.level_defender](
 					object,
 					FileTools.isExists(dir+"/mods/"+object.name),
-					this.getJson(dir+"/config/"+object.name.replace(/ /g, "-")+"-config.json"),
+					this.getJson(dir+"/config/"+name.replace(/ /g, "-")+"-config.json"),
 					dir
 				);
 				if(!result) continue;
