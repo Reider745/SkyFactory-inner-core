@@ -37,7 +37,7 @@ const DefaultMessage = [
 	"<translation,ru,This mod is important for gameplay>:Данный мод важен для геймплея\n<text>:This mod is important for gameplay",
 	"<translation,ru,This mod is an important technical mod>:Данный мод является важным техническим модом\n<text>:This mod is an important technical mod",
 	"<translation,ru,Quests are associated with this mod>:С данным модом связаны квесты\n<text>:Quests are associated with this mod",
-	"<translation,ru>:Изменение версии мода не желательна\n<text>:Changing the mod version is not desirable"
+	"<translation,ru,Changing the mod version is not desirable>:Изменение версии мода не желательна\n<text>:Changing the mod version is not desirable"
 ];
 
 void function(){
@@ -83,7 +83,6 @@ void function(){
 				text += result.text+"\n";
 			}
 			if(text != ""){
-				FileTools.WriteText(__dir__+"input.txt", text);
 				let ui = self.parseDialog(null, block ? "<translation,ru,Access to the assembly is blocked>:Доступ к сборке заблокирован\n<text>:Access to the assembly is blocked\n"+text : text, NAME);
 				if(block){
 					ui.setCanExit(false);
