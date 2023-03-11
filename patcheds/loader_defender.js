@@ -1,4 +1,4 @@
-const NAME = "Loader Defender 1.0";
+const NAME = "Loader Defender 1.1";
 
 /*
 Уровни защиты 
@@ -9,18 +9,36 @@ const NAME = "Loader Defender 1.0";
 4 - блокировка сборки, если мод отключён или удалён или версия мода изменена 
 */
 
+/*let ModsDefender = [
+	{name: "Test", level_defender: 1, description: "\n<text>:Тестовое сообщение"},
+	{name: "ClassicUI", level_defender: 2, description: "", versions: ["test 1"]},
+	{name: "CoreUtility", level_defender: 4, description: "", versions: ["test 1"]}
+];*/ 
+if(!this["self"]){
+	var CONFIG = Config;
+	var self = ModPack;
+	for(let key in FileSystem)
+		self[key] = FileSystem[key];
+	
+	function Event(){
+		PathEvent.apply(this);
+		
+		this.getInformation = function(){
+			return {name: NAME};
+		}
+	}
+	PathManager.addEvent(new Event());
+}
 
 let ModsDefender = JSON.parse(self.getFile("mods_defender.json"));
 const DefaultMessage = [
 	"",
-	"\n<text>:Отсутсвие данного мода может привести к не предсказуемым последствиям",
-	"\n<text>:Данный мод важен для геймплея",
-	"\n<text>:Данный мод является важным техническим модом",
-	"\n<text>:С данным модом связаны квесты",
-	"\n<text>:Изменение версии мода не желательна"
+	"<translation,ru,The absence of this mod can lead to unpredictable consequences>:Отсутсвие данного мода может привести к не предсказуемым последствиям\n<text>:The absence of this mod can lead to unpredictable consequences",
+	"<translation,ru,This mod is important for gameplay>:Данный мод важен для геймплея\n<text>:This mod is important for gameplay",
+	"<translation,ru,This mod is an important technical mod>:Данный мод является важным техническим модом\n<text>:This mod is an important technical mod",
+	"<translation,ru,Quests are associated with this mod>:С данным модом связаны квесты\n<text>:Quests are associated with this mod",
+	"<translation,ru>:Изменение версии мода не желательна\n<text>:Changing the mod version is not desirable"
 ];
-
-let canBlock = true;
 
 void function(){
 	let setting = FileTools.ReadJSON(__dir__+"setting.json");
@@ -32,11 +50,10 @@ void function(){
 	setting.setting["defender"] = "true";
 	FileTools.WriteJSON(__dir__+"setting.json", setting, true);
 	CONFIG.read();
-	canBlock = false;
 }();
 
 void function(){
-	const Defender =  {
+	const Defender = {
 		levels: {},
 		addDefenderLevel(level, func){
 			this.levels[level] = func;
@@ -45,7 +62,7 @@ void function(){
 			if(!FileTools.isExists(path)) return null;
 			return FileTools.ReadJSON(path)
 		},
-		check(list, cb, message){
+		check(list){
 			let dir = __modpack__.getRootDirectoryPath();
 			let block = false;
 			let text = "";
@@ -65,14 +82,14 @@ void function(){
 				if(result.block) block = true;
 				text += result.text+"\n";
 			}
-			if(text != "" && message){
-				let ui = self.parseDialog(null, block ? "<text>:Доступ к сборке заблокирован\n"+text : text, NAME);
-				if(block && cb){
+			if(text != ""){
+				FileTools.WriteText(__dir__+"input.txt", text);
+				let ui = self.parseDialog(null, block ? "<translation,ru,Access to the assembly is blocked>:Доступ к сборке заблокирован\n<text>:Access to the assembly is blocked\n"+text : text, NAME);
+				if(block){
 					ui.setCanExit(false);
 					while(true){}
 				}
 			}
-			return {block: block, text: text};
 		}
 	};
 	
@@ -82,12 +99,12 @@ void function(){
 		if(!isMod)
 			return {
 				block: false,
-				text: "<text>:Модификация "+obj.name+" не найдена."+obj.description
+				text: "<translation,ru,Modification {name} not found.>:Модификация {name} не найдена.\n<text>:Modification {name} not found.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 		if(!config || !config.enabled)
 			return {
 				block: false,
-				text: "<text>:Модификация "+obj.name+" отключена."+obj.description
+				text: "<translation,ru,Modification of {name} is disabled.>:Модификация {name} отключена.\n<text>:Modification of {name} is disabled.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 	});
 	
@@ -95,18 +112,18 @@ void function(){
 		if(!isMod)
 			return {
 				block: false,
-				text: "<text>:Модификация "+obj.name+" не найдена."+obj.description
+				text: "<translation,ru,Modification {name} not found.>:Модификация {name} не найдена.\n<text>:Modification {name} not found.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 		if(!config || !config.enabled)
 			return {
 				block: false,
-				text: "<text>:Модификация "+obj.name+" отключена."+obj.description
+				text: "<translation,ru,Modification of {name} is disabled.>:Модификация {name} отключена.\n<text>:Modification of {name} is disabled.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 		let info = Defender.getJson(dir+"/mods/"+obj.name+"/mod.info");
 		if(!info || obj.versions.indexOf(info.version))
 			return {
 				block: false,
-				text: "<text>:Версия модификации "+obj.name+" изменена."+obj.description
+				text: "<translation,ru,The version of the modification {name} has been changed.>:Версия модификации {name} изменена.\n<text>:The version of the modification {name} has been changed.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 	});
 	
@@ -114,12 +131,12 @@ void function(){
 		if(!isMod)
 			return {
 				block: true,
-				text: "<text>:Модификация "+obj.name+" не найдена."+obj.description
+				text: "<translation,ru,Modification {name} not found.>:Модификация {name} не найдена.\n<text>:Modification {name} not found.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 		if(!config || !config.enabled)
 			return {
 				block: true,
-				text: "<text>:Модификация "+obj.name+" отключена."+obj.description
+				text: "<translation,ru,Modification of {name} is disabled.>:Модификация {name} отключена.\n<text>:Modification of {name} is disabled.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 	});
 	
@@ -127,32 +144,20 @@ void function(){
 		if(!isMod)
 			return {
 				block: true,
-				text: "<text>:Модификация "+obj.name+" не найдена."+obj.description
+				text: "<translation,ru,Modification {name} not found.>:Модификация {name} не найдена.\n<text>:Modification {name} not found.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 		if(!config || !config.enabled)
 			return {
 				block: true,
-				text: "<text>:Модификация "+obj.name+" отключена."+obj.description
+				text: "<translation,ru,Modification of {name} is disabled.>:Модификация {name} отключена.\n<text>:Modification of {name} is disabled.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 		let info = Defender.getJson(dir+"/mods/"+obj.name+"/mod.info");
 		if(!info || obj.versions.indexOf(info.version))
 			return {
 				block: true,
-				text: "<text>:Версия модификации "+obj.name+" изменена."+obj.description
+				text: "<translation,ru,The version of the modification {name} has been changed.>:Версия модификации {name} изменена.\n<text>:The version of the modification {name} has been changed.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 	});
-	if(CONFIG.getSetting()["defender"] == "true"){
-		let result = Defender.check(ModsDefender, canBlock, true);
-		if(result.block && !canBlock){
-			let ui = self.parseDialog(null, "<text>:В сборку был установлен компонент Loader Defender.\n<text>:В каком-то смысле данный компонент предназначен\n<text>:для более стабильной работы сборки. Как это работает?\n<text>:Этот компонент предупреждает если был отключён или\n<text>:как-то изменён мод который не стоило изменять при\n<text>:изменение важных модификаций доступ к сборке компонент\n<text>:будет блокировать. Компонент можно отключить в \n<text>:настройках.\n<title>:Внимание!\n<text>:Доступ к сборке не был заблокирован т.к это первый вход.", NAME);
-			ui.addElement(new Setting.SettingButtonTextElement("Настройки", "NativeButton").setClick(function(){
-				CONFIG.open();
-			}));
-		}else if(!canBlock){
-			let ui = self.parseDialog(null, "<text>:В сборку был установлен компонент Loader Defender.\n<text>:В каком-то смысле данный компонент предназначен\n<text>:для более стабильной работы сборки. Как это работает?\n<text>:Этот компонент предупреждает если был отключён или\n<text>:как-то изменён мод который не стоило изменять при\n<text>:изменение важных модификаций доступ к сборке компонент\n<text>:будет\nблокировать. Компонент можно отключить в \n<text>:настройках.", NAME);
-			ui.addElement(new Setting.SettingButtonTextElement("Настройки", "NativeButton").setClick(function(){
-				CONFIG.open();
-			}));
-		}
-	}
+	if(CONFIG.getSetting()["defender"] == "true")
+		Defender.check(ModsDefender);
 }();
