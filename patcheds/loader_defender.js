@@ -73,7 +73,7 @@ void function(){
 				object.level_defender = object.level_defender || 0;
 				object.description = object.description || DefaultMessage[object.message || 0];
 				
-				let name = obj.name;
+				let name = object.name;
 				let result = this.levels[object.level_defender](
 					object,
 					FileTools.isExists(dir+"/mods/"+object.name),
