@@ -59,7 +59,6 @@ void function(){
 			this.levels[level] = func;
 		},
 		getJson(path){
-			alert(path)
 			if(!FileTools.isExists(path)) return null;
 			return FileTools.ReadJSON(path)
 		},
@@ -121,7 +120,7 @@ void function(){
 				text: "<translation,ru,Modification of {name} is disabled.>:Модификация {name} отключена.\n<text>:Modification of {name} is disabled.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 		let info = Defender.getJson(dir+"/mods/"+obj.name+"/mod.info");
-		if(!info || obj.versions.indexOf(info.version))
+		if(!info || obj.versions.indexOf(info.version) == -1)
 			return {
 				block: false,
 				text: "<translation,ru,The version of the modification {name} has been changed.>:Версия модификации {name} изменена.\n<text>:The version of the modification {name} has been changed.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
@@ -152,10 +151,8 @@ void function(){
 				block: true,
 				text: "<translation,ru,Modification of {name} is disabled.>:Модификация {name} отключена.\n<text>:Modification of {name} is disabled.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
-		alert(obj.name)
 		let info = Defender.getJson(dir+"/mods/"+obj.name+"/mod.info");
-		alert(JSON.stringify(info))
-		if(!info || obj.versions.indexOf(info.version))
+		if(!info || obj.versions.indexOf(info.version) == -1)
 			return {
 				block: true,
 				text: "<translation,ru,The version of the modification {name} has been changed.>:Версия модификации {name} изменена.\n<text>:The version of the modification {name} has been changed.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
