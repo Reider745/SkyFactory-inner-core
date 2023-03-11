@@ -151,6 +151,7 @@ void function(){
 				text: "<translation,ru,Modification of {name} is disabled.>:Модификация {name} отключена.\n<text>:Modification of {name} is disabled.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 		let info = Defender.getJson(dir+"/mods/"+obj.name+"/mod.info");
+		alert(JSON.stringify(info))
 		if(!info || obj.versions.indexOf(info.version))
 			return {
 				block: true,

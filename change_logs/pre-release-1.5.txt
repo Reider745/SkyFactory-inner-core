@@ -1,3 +1,18 @@
 <translation,ru,Update Preview 1.5>:Обновление Pre release 1.5
 <title>:Update Preview 1.5
-<text>:- Фикс крафта филосовского камня
+
+<text>:- Фикс ошибки в аду
+
+<text>:- Обновлён мод Recipe Viewer
+
+<text>:- Обновлён мод RedPower
+
+<text>:- Обновлён мод IndustrialCraft2
+
+<text>:- Обновлён мод Jei mobile
+
+<text>:- Обновлён мод ClassicUI
+
+<text>:- Обновлён мод Minecraft online
+
+<text>:- Обновлён мод Inventory HUD
