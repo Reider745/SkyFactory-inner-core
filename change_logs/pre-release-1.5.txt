@@ -1,18 +1,26 @@
 <translation,ru,Update Preview 1.5>:Обновление Pre release 1.5
 <title>:Update Preview 1.5
 
-<text>:- Фикс ошибки в аду
+<translation,ru,- Fix bugs in hell>:- Фикс ошибки в аду
+<text>:- Fix bugs in hell
 
-<text>:- Обновлён мод Recipe Viewer
+<translation,ru,- Updated Recipe Viewer mod>:- Обновлён мод Recipe Viewer
+<text>:- Updated Recipe Viewer mod
 
-<text>:- Обновлён мод RedPower
+<translation,ru,- Updated mod RedPower>:- Обновлён мод RedPower
+<text>:- Updated mod RedPower
 
-<text>:- Обновлён мод IndustrialCraft2
+<translation,ru,- Updated mod IndustrialCraft2>:- Обновлён мод IndustrialCraft2
+<text>:- Updated mod IndustrialCraft2
 
-<text>:- Обновлён мод Jei mobile
+<translation,ru,- Updated mod Jei mobile>:- Обновлён мод Jei mobile
+<text>:- Updated mod Jei mobile
 
-<text>:- Обновлён мод ClassicUI
+<translation,ru,- Updated ClassicUI mod>:- Обновлён мод ClassicUI
+<text>:- Updated ClassicUI mod
 
-<text>:- Обновлён мод Minecraft online
+<translation,ru,- Updated mod Minecraft online>:- Обновлён мод Minecraft online
+<text>:- Updated mod Minecraft online
 
-<text>:- Обновлён мод Inventory HUD
+<translation,ru,- Updated mod Inventory HUD>:- Обновлён мод Inventory HUD
+<text>:- Updated mod Inventory HUD
