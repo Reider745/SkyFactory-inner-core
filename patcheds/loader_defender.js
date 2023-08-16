@@ -39,7 +39,7 @@ const DefaultMessage = [
 	"<translation,ru,This mod is an important technical mod>:Данный мод является важным техническим модом\n<text>:This mod is an important technical mod",
 	"<translation,ru,Quests are associated with this mod>:С данным модом связаны квесты\n<text>:Quests are associated with this mod",
 	"<translation,ru,Changing the mod version is not desirable>:Изменение версии мода не желательна\n<text>:Changing the mod version is not desirable",
-	"<translation,ru,Setting this mode is prohibited>:Установка данного мода запрещена\n<text>:Setting this mode is prohibited"
+	"<translation,ru,Entering the game is prohibited>:Вход в игру запрещён\n<text>:Entering the game is prohibited"
 	
 ];
 
