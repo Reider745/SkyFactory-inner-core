@@ -198,5 +198,12 @@
 	{
 		"name": "World-utility",
 		"level_defender": 0
+	},
+
+
+	{
+		"name": "WaillaPE",
+		"message": 0,
+		"level_defender": 5
 	}
 ]

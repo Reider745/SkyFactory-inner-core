@@ -7,6 +7,7 @@ const NAME = "Loader Defender 1.1";
 2 - предупреждение об удаление/выключения/изменения версии мода
 3 - блокировка сборки, если мод отключён или удалён
 4 - блокировка сборки, если мод отключён или удалён или версия мода изменена 
+5 - если мод установлен, посылать юзера нахуй и недовать ему войти в игру
 */
 
 /*let ModsDefender = [
@@ -37,7 +38,9 @@ const DefaultMessage = [
 	"<translation,ru,This mod is important for gameplay>:Данный мод важен для геймплея\n<text>:This mod is important for gameplay",
 	"<translation,ru,This mod is an important technical mod>:Данный мод является важным техническим модом\n<text>:This mod is an important technical mod",
 	"<translation,ru,Quests are associated with this mod>:С данным модом связаны квесты\n<text>:Quests are associated with this mod",
-	"<translation,ru,Changing the mod version is not desirable>:Изменение версии мода не желательна\n<text>:Changing the mod version is not desirable"
+	"<translation,ru,Changing the mod version is not desirable>:Изменение версии мода не желательна\n<text>:Changing the mod version is not desirable",
+	"<translation,ru,Setting this mode is prohibited>:Установка данного мода запрещена\n<text>:Setting this mode is prohibited"
+	
 ];
 
 void function(){
@@ -158,6 +161,15 @@ void function(){
 				text: "<translation,ru,The version of the modification {name} has been changed.>:Версия модификации {name} изменена.\n<text>:The version of the modification {name} has been changed.\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 	});
+
+	Defender.addDefenderLevel(5, function(obj, isMod, config, dir){
+		if(isMod)
+			return {
+				block: true,
+				text: "<translation,ru,Installing the {name} mod is prohibited!>Установка мода {name} запрещена!\n<text>:Installing the {name} mod is prohibited!\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
+			};
+	});
+
 	if(CONFIG.getSetting()["defender"] == "true")
 		Defender.check(ModsDefender);
 }();
