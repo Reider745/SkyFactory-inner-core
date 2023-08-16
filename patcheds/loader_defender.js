@@ -1,4 +1,4 @@
-const NAME = "Loader Defender 1.1";
+const NAME = "Loader Defender 1.2";
 
 /*
 Уровни защиты 
@@ -87,7 +87,7 @@ void function(){
 				text += result.text+"\n";
 			}
 			if(text != ""){
-				let ui = self.parseDialog(null, block ? "<translation,ru,Access to the assembly is blocked>:Доступ к сборке заблокирован\n<text>:Access to the assembly is blocked\n"+text : text, NAME);
+				let ui = self.parseDialog(null, block ? "<translation,ru,Access to the assembly is blocked!>:Доступ к сборке заблокирован!\n<text>:Access to the assembly is blocked!\n"+text : text, NAME);
 				if(block){
 					ui.setCanExit(false);
 					while(true){}
@@ -166,7 +166,7 @@ void function(){
 		if(isMod)
 			return {
 				block: true,
-				text: "<translation,ru,Installing the {name} mod is prohibited!>Установка мода {name} запрещена!\n<text>:Installing the {name} mod is prohibited!\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
+				text: "<translation,ru,Installing the {name} mod is prohibited!>:Установка мода {name} запрещена!\n<text>:Installing the {name} mod is prohibited!\n{description}".replace(/{name}/g, obj.name).replace("{description}", obj.description)
 			};
 	});
 
