@@ -1,5 +1,5 @@
-<translation,ru,Update Preview 1.5>:Обновление Pre release 1.5
-<title>:Update Preview 1.5
+<translation,ru,Update pre-release 1.5>:Обновление pre-release 1.5
+<title>:Update pre-release 1.5
 
 <translation,ru,- Fix bugs in hell>:- Фикс ошибки в аду
 <text>:- Fix bugs in hell

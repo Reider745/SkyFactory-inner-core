@@ -17,6 +17,11 @@
 		"level_defender": 0
 	},
 	{
+		"name": "AvaritiaBE",
+		"level_defender": 3,
+		"message": 2
+	},
+	{
 		"name": "Better-Foliage",
 		"level_defender": 0
 	},
@@ -41,7 +46,7 @@
 		"level_defender": 4,
 		"message": 3,
 		"versions": [
-			"3.0.0-Alpha", "3.2.0-Alpha"
+			"3.0.0-Alpha"
 		]
 	},
 	{
@@ -105,6 +110,14 @@
 		"level_defender": 0
 	},
 	{
+		"name": "KernelExtension",
+		"level_defender": 4,
+		"message": 3,
+		"versions": [
+			"3.0"
+		]
+	},
+	{
 		"name": "Modpack-online",
 		"level_defender": 0
 	},
@@ -134,7 +147,7 @@
 		"name": "Recipe Viewer",
 		"level_defender": 2,
 		"message": 5,
-		"versions": ["6.0","6.1","6.3.1"]
+		"versions": ["6.0","6.1"]
 	},
 	{
 		"name": "RedPower",
@@ -186,6 +199,8 @@
 		"name": "World-utility",
 		"level_defender": 0
 	},
+
+
 	{
 		"name": "WailaPE",
 		"level_defender": 5

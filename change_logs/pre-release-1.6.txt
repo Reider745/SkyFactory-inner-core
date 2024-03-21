@@ -1,0 +1,56 @@
+<translation,ru,Update pre-release 1.6>:Обновление pre-release 1.6
+<title>:Update pre-release 1.6
+
+<translation,ru,- The AdventurePlusR addon has been removed>:- Удален аддон AdventurePlusR
+<text>:- The AdventurePlusR addon has been removed
+
+<translation,ru,- The AvatiaBE mod has been removed>:- Удален мод AvatiaBE
+<text>:- The AvatiaBE mod has been removed
+
+<translation,ru,- The KernelExtension mod has been removed>:- Удалён мод KernelExtension
+<text>:- The KernelExtension mod has been removed
+
+<translation,ru,- The AppleSkinBE mod has been removed>:- Удален мод AppleSkinBE
+<text>:- The AppleSkinBE mod has been removed
+
+<translation,ru,- Removed the Clumps mod>:- Удален мод Clumps
+<text>:- Removed the Clumps mod
+
+<translation,ru,- Fixed 2 bugs when connecting to other players>:- Исправлено 2 ошибки при подключении к другим игрокам
+<text>:- Fixed 2 bugs when connecting to other players
+
+<translation,ru,- Fixed the overlap of one quest>:- Исправлено наложение одного квеста
+<text>:- Fixed the overlap of one quest
+
+<translation,ru,- Updated mod Industrial craft 2>:- Обновлен мод Industrial craft 2
+<text>:- Updated mod Industrial craft 2
+
+<translation,ru,- Updated the ClassicUI mod>:- Обновлен мод ClassicUI
+<text>:- Updated the ClassicUI mod
+
+<translation,ru,- Updated the Nuclear Reactor mod>:- Обновлен мод Nuclear Reactor
+<text>:- Updated the Nuclear Reactor mod
+
+<translation,ru,- Fixed Extra Disk on b116>:- Исправлен Extra Disk на b116
+<text>:- Fixed Extra Disk on b116
+
+<translation,ru,- Updated the Storage Drawers mod>:- Обновлен мод Storage Drawers
+<text>:- Updated the Storage Drawers mod
+
+<translation,ru,- Updated Bonsai pots mod>:- Обновлен мод Bonsai pots
+<text>:- Updated Bonsai pots mod
+
+<translation,ru,- Removed the settings of Jei mobile>:- Удалены настройки Jei mobile
+<text>:- Removed the settings of Jei mobile
+
+<translation,ru,- Updated the Wood model update>:- Обновлен мод Wood model update
+<text>:- Updated the Wood model update
+
+<translation,ru,- Updated the Core utility mod>:- Обновлен мод Core utility
+<text>:- Updated the Core utility mod
+
+<translation,ru,- Updated BuildCraft mod (taken from Zote Echoes)>:- Обновлен мод BuildCraft(взят из Zote Echoes)
+<text>:- Updated BuildCraft mod (taken from Zote Echoes)
+
+<translation,ru,- Updated the FtbQuests mod>:- Обновлен мод FtbQuests
+<text>:- Updated the FtbQuests mod
