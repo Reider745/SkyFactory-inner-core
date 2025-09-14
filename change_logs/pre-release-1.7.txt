@@ -1,2 +1,41 @@
 <translation,ru,Update pre-release 1.6>:Обновление pre-release 1.7
 <title>:Update pre-release 1.7
+
+<translation,ru,- Refusal of Core Utility>:- Отказ от Core Utility
+<text>:- Refusal of Core Utility
+
+<translation,ru,- Nuclear reactor update>:- Обновление Nuclear reactor
+<text>:- Nuclear reactor update
+
+<translation,ru,- Thirst rebalance>:- Ребаланс жажды
+<text>:- Thirst rebalance
+
+<translation,ru,- Multiple quest fixes:- Множественные исправления квестов
+<text>:- Multiple quest fixes
+
+<translation,ru,- Repair station fix>:- Исправление ремонтной станции
+<text>:- Repair station fix
+
+<translation,ru,- Multiple fixes for various mods in multiplayer:- Множественные исправления различных модов в мультиплеере
+<text>:- Multiple fixes for various mods in multiplayer
+
+<translation,ru,- Fix auto workbench from Factory craft>:- Исправление авто верстака из Factory craft
+<text>:- Fix auto workbench from Factory craft
+
+<translation,ru,- Corrections of leaking pipes>:- Исправления извелекающих труб
+<text>:- Corrections of leaking pipes
+
+<translation,ru,- Correction of various crafts>:- Исправление различных крафтов
+<text>:- Correction of various crafts
+
+<translation,ru,- Fixes for infinite loading of Refined Storage>:- Исправления бесконечной загрузки Refined Storage
+<text>:- Fixes for infinite loading of Refined Storage
+
+<translation,ru,- Automatic hammer fix>:- Исправление автоматического молота
+<text>:- Automatic hammer fix
+
+<translation,ru,- Fix for iron chest dupe>:- Исправление дюпа iron chest
+<text>:- Fix for iron chest dupe
+
+<translation,ru,- Ender chest fixes>:- Исправления Ender chest
+<text>:- Ender chest fixes

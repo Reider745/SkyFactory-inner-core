@@ -4,7 +4,7 @@
         "loader_defender": "patcheds/loader_defender.js"
     },
     "information": {
-        "version": "pre-release 1.6",
+        "version": "pre-release 1.7",
         "change_logs": {
             "alpha 4.2": "change_logs/alpha-4.2.txt",
             "beta 1.0": "change_logs/beta-1.0.txt",

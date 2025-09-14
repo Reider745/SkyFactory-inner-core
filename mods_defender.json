@@ -54,7 +54,7 @@
 	},
 	{
 		"name": "Ex Nihilo Origin",
-		"level_defender": 1,
+		"level_defender": 0,
 		"message": 2,
 		"versions": [
 			"2.0"
