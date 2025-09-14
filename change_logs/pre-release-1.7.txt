@@ -10,13 +10,13 @@
 <translation,ru,- Thirst rebalance>:- Ребаланс жажды
 <text>:- Thirst rebalance
 
-<translation,ru,- Multiple quest fixes:- Множественные исправления квестов
+<translation,ru,- Multiple quest fixes>:- Множественные исправления квестов
 <text>:- Multiple quest fixes
 
 <translation,ru,- Repair station fix>:- Исправление ремонтной станции
 <text>:- Repair station fix
 
-<translation,ru,- Multiple fixes for various mods in multiplayer:- Множественные исправления различных модов в мультиплеере
+<translation,ru,- Multiple fixes for various mods in multiplayer>:- Множественные исправления различных модов в мультиплеере
 <text>:- Multiple fixes for various mods in multiplayer
 
 <translation,ru,- Fix auto workbench from Factory craft>:- Исправление авто верстака из Factory craft
