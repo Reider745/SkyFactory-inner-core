@@ -38,7 +38,7 @@
 	},
 	{
 		"name": "CoreEngine",
-		"level_defender": 4,
+		"level_defender": 0,
 		"message": 3,
 		"versions": [
 			"3.0.0-Alpha", "3.2.0-Alpha"
@@ -54,12 +54,20 @@
 	},
 	{
 		"name": "Ex Nihilo Origin",
-		"level_defender": 4,
+		"level_defender": 1,
 		"message": 2,
 		"versions": [
 			"2.0"
 		]
 	},
+  {
+    "name": "ExNihiloRemake",
+    "level_defender": 1,
+    "message": 2,
+    "versions": [
+      "2.0(remake)"
+    ]
+  },
 	{
 		"name": "Extra-Disks",
 		"level_defender": 1,
