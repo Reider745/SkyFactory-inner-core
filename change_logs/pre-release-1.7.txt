@@ -1,4 +1,4 @@
-<translation,ru,Update pre-release 1.6>:Обновление pre-release 1.7
+<translation,ru,Update pre-release 1.7>:Обновление pre-release 1.7
 <title>:Update pre-release 1.7
 
 <translation,ru,- Refusal of Core Utility>:- Отказ от Core Utility

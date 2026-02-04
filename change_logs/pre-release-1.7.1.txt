@@ -1,0 +1,14 @@
+<translation,ru,Update pre-release 1.7.1>:Обновление pre-release 1.7.1
+<title>:Update pre-release 1.7.1
+
+<translation,ru,- Industrial craft 2 update>:- Обновление Industrial craft 2
+<text>:- Industrial craft 2 update
+
+<translation,ru,- Gravitation Suite update>:- Обновление Gravitation Suite
+<text>:- Gravitation Suite update
+
+<translation,ru,- Correction of Item information description>:- Исправление описания Item information
+<text>:- Correction of Item information description
+
+<translation,ru,- Fixing the sieve>:- Исправление сито
+<text>:- Fixing the sieve
